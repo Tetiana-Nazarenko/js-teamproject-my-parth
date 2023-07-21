@@ -1,0 +1,97 @@
+body {
+  background-color: var(--bgc-light-them);
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  align-items: center;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #050505;
+}
+
+img {
+  display: block;
+  /* max-width: 100%;
+  height: auto; */
+}
+
+.title-popular-recipes {
+  padding-left: 100px;
+  margin-bottom: 32px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.popular-recipes {
+  padding-left: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.pop-recipe-link {
+  weight: 235px;
+  height: 67px;
+}
+.pop-recipe-card {
+  display: flex;
+  gap: 16px;
+}
+.img-pop-recipe {
+  border-radius: 10px;
+}
+
+.text-pop-recipe {
+  height: 67px;
+  width: 155px;
+}
+.title-pop-recipe {
+  /* width: 155px; */
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  padding-right: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+}
+.description-pop-recipe {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14px;
+
+  height: 41px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
