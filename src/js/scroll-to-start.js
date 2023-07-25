@@ -8,7 +8,10 @@ function scrollToTop() {
 }
 
 window.onscroll = function () {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+  if (
+    document.body.scrollTop > 700 ||
+    document.documentElement.scrollTop > 700
+  ) {
     scrollButton.style.display = 'block';
   } else {
     scrollButton.style.display = 'none';
