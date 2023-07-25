@@ -1,3 +1,13 @@
+@import url(./css/header.css);
+@import url(./css/hero.css);
+@import url(./css/hero-switch.css);
+@import url(./css/all-foods.css);
+@import url(./css/filter.css);
+@import url(./css/scroll-categories.css);
+@import url(./css/popular-recipes.css);
+@import url(./css/video-recipe.css);
+@import url(./css/scroll-to-start.css);
+
 body {
   background-color: var(--bgc-light-them);
   margin: 0;
@@ -41,57 +51,103 @@ img {
   height: auto; */
 }
 
+/*  MY STYLES */
 .title-popular-recipes {
-  padding-left: 100px;
-  margin-bottom: 32px;
-  font-size: 24px;
+  margin-left: 20px;
+  margin-bottom: 16px;
+  font-size: 18px;
   font-weight: 600;
-  line-height: 28px;
+  line-height: 24px;
 }
-
 .popular-recipes {
-  padding-left: 100px;
+  margin-left: 20px;
+  gap: 16px;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+
+  width: 332px;
+  height: 150px;
+  overflow: hidden;
 }
 
-.pop-recipe-link {
-  weight: 235px;
-  height: 67px;
-}
 .pop-recipe-card {
   display: flex;
   gap: 16px;
+  /* max-width: 332px;
+  max-height: 150px; */
 }
 .img-pop-recipe {
   border-radius: 10px;
 }
 
-.text-pop-recipe {
-  height: 67px;
-  width: 155px;
-}
 .title-pop-recipe {
-  /* width: 155px; */
   margin-bottom: 8px;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 600;
   line-height: 18px;
   padding-right: 5px;
+
   white-space: nowrap;
   overflow: hidden;
-
   text-overflow: ellipsis;
 }
 .description-pop-recipe {
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 16px;
 
-  height: 41px;
-
+  height: 34px;
   overflow: hidden;
   text-overflow: ellipsis;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+@media screen and (min-width: 768px) {
+  .title-popular-recipes {
+    margin-left: 32px;
+    margin-bottom: 16px;
+  }
+  .popular-recipes {
+    margin-left: 32px;
+
+    width: 176px;
+    height: 316px;
+    overflow: visible;
+  }
+
+  .text-pop-recipe {
+    height: 67px;
+    width: 120px;
+  }
+  .description-pop-recipe {
+    font-size: 10px;
+    line-height: 14px;
+
+    height: 41px;
+
+    -webkit-line-clamp: 3;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .title-popular-recipes {
+    margin-left: 100px;
+    margin-bottom: 32px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .popular-recipes {
+    margin-left: 100px;
+    gap: 32px;
+    width: 235px;
+    height: 364px;
+  }
+
+  .text-pop-recipe {
+    width: 155px;
+  }
 }
